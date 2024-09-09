@@ -3,8 +3,9 @@ import Link from "next/link";
 //import buildClient from "../api/build-client";
 const LandingPage = ({ currentUser, tickets }) => {
   return (
-    <>
+    <div>
       {currentUser ? <h1>You are sign in</h1> : <h2>Sign out</h2>}
+      <h2>Tickets</h2>
       <table className="table">
         <thead>
           <tr>
@@ -31,7 +32,7 @@ const LandingPage = ({ currentUser, tickets }) => {
             ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 
