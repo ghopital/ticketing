@@ -16,7 +16,8 @@ app.use(
   cookieSession({
     name: "session",
     signed: false, // Set this to true if you want the session data to be signed
-    secure: process.env.NODE_ENV !== "test",
+    //secure: process.env.NODE_ENV !== "test",
+    secure: false,
   })
 );
 app.use(currentUser);
